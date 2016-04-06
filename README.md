@@ -11,8 +11,8 @@ Looking for examples I have found:
 
 Almost cloning his work, I have customized some remote accesible environments:
 
-[debian-xrdp](xrdp/base/debian-xrdp/Dockerfile)
-[debian-xrdp-mate](xrdp/base/debian-xrdp-mate/Dockerfile)
+[debian-xrdp](xrdp/base/xrdp-debian/Dockerfile)
+[debian-xrdp-mate](xrdp/base/xrdp-debian-mate/Dockerfile)
 
 Just as an example of environment:
 
