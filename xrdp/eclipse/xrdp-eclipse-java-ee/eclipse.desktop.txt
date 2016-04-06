@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Eclipse Mars 2
+Comment=Eclipse Mars 2 for Java Developers
+Exec=/opt/eclipse/eclipse
+Terminal=false
+Type=Application
+Icon=/opt/eclipse/icon.xpm
+Categories=Development;
