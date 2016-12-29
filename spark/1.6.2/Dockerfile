@@ -1,6 +1,6 @@
-# docker build -t josepm9/spark-1.6.3:v1 .
-# docker tag josepm9/spark-1.6.3:v1 josepm9/spark-1.6.3:latest
-# docker run -t -i --rm josepm9/spark-1.6.3 /bin/bash
+# docker build -t josepm9/spark-1.6.2:v1 .
+# docker tag josepm9/spark-1.6.2:v1 josepm9/spark-1.6.2:latest
+# docker run -t -i --rm josepm9/spark-1.6.2 /bin/bash
 
 from josepm9/debopenjdk8:v1
 
@@ -10,10 +10,10 @@ RUN apt-get -y --no-install-recommends install curl
 
 # Instalar Apache Spark
 
-RUN curl http://apache.rediris.es/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz | tar xz -C /opt
+RUN curl http://apache.rediris.es/spark/spark-1.6.2/spark-1.6.2-bin-hadoop2.6.tgz | tar xz -C /opt
 
 # Variables de entorno
-ENV SPARK_HOME="/opt/spark-1.6.3-bin-hadoop2.6"
+ENV SPARK_HOME="/opt/spark-1.6.2-bin-hadoop2.6"
 ENV SPARK_MASTER="spark.master"
 
 # Scripts de arranque

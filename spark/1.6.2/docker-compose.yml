@@ -1,0 +1,17 @@
+version: '2'
+services:
+  spark.master:
+    image: josepm9/spark-1.6.2:v1
+    ports:
+    - "8080:8080"
+    - "7077:7077"
+    - "6066:6066"
+    command: /opt/start-master.sh
+  spark.worker1:
+    image: josepm9/spark-1.6.2:v1
+    links:
+    - spark.master
+    command: /opt/start-worker.sh
+    ports:
+    - "8081:8081"
+
